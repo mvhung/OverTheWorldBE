@@ -1,0 +1,6 @@
+@LearningVocab_HostAddress = http://localhost:5036
+
+GET {{LearningVocab_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
