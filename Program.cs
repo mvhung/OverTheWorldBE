@@ -1,5 +1,6 @@
+using LearningVocab;
 using LearningVocab.Datas;
-using LearningVocab.Services;
+using LearningVocab.Validators;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -13,6 +14,8 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddServicesCollection();
+builder.Services.AddValidatorCollections();
+builder.Services.AddAutoMapper(typeof(Program).Assembly);
 
 var app = builder.Build();
 

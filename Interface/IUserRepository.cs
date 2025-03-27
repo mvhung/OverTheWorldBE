@@ -2,7 +2,7 @@
 
 namespace LearningVocab.Interface
 {
-    public interface IUserService
+    public interface IUserRepository
     {
         public Task<IEnumerable<User>> GetUsers();
         public Task<User> GetUserById(string id);
@@ -10,5 +10,6 @@ namespace LearningVocab.Interface
         public Task<int> AddUser(User user);
         public Task<int> UpdateUser(User user);
         public Task<int> DeleteUser(string id);
+
     }
 }
