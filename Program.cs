@@ -16,6 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddServicesCollection();
 builder.Services.AddValidatorCollections();
 builder.Services.AddAutoMapper(typeof(Program).Assembly);
+builder.Services.AddAuthentications();
 
 var app = builder.Build();
 
